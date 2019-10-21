@@ -37,14 +37,15 @@ defmodule Cliente do
 
 
   def launch(pid, op, 1) do
+
+	pid = spawn(Cliente, :clienteRecieve, [])
 	send(pid, {self, op, 1..36, 1})
-	spawn(Cliente.:recieve, [])
   end
 
   def launch(pid, op, n) when n != 1 do
+	pid = spawn(Cliente, :clienteRecieve, [])
 	send(pid, [self, op, 1..36, n])
 	launch(pid, op, n - 1)
-	spawn 
   end 
   
   def genera_workload(server_pid, pid, escenario, time) do
@@ -68,14 +69,15 @@ defmodule Cliente do
   	genera_workload(server_pid, escenario)
   end
   
-  def recieve() do
-  	{:fin, listaFib} -> IO.puts listaFib
+  def clienteRecieve() do
+  	recieve do
+  		{:fin, listaFib} -> IO.inspect(listaFib, label: "Toma lista crack ")
+  	end
   end
 
   #desde escenario llamaré a este
   #manda peticiones al worker
   def cliente(server_pid, tipo_escenario) do
-  pid = spawn(Cliente, :recieve, []) #falta implementar recibe
   	case tipo_escenario do
   	#modifica las cabeceras
 		:uno -> genera_workload(server_pid,pid, 1)
