@@ -86,6 +86,10 @@ defmodule Cliente do
 end
 
 
+#dos opciones, si creo el proceso recibir antes de generar workload, cuando vaya a medir timepos de ejecución no sabre identificar los procesos, 
+#para ello tendré que llevar un id de proceso
+# la otra opcion es lanzar uno por cada launch, para ello genero un pid y le mando su pid y se dónde lo recibiré
+
 #pegar codigo del modulo en cliente de iex
 #Cliete.cliente({pidServer,:uno/:dos/:tres})
 #pool_-> master escucha constantemente, cuando le llega una petición lanza thread y está pendiente de las peticiones mientras tnato. 
