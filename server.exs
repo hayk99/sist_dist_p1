@@ -26,8 +26,14 @@ end
 
 defmodule Server do
 	def server() do
-		{pid, :fib, listaValores, 1} -> time1 = :os.system_time(:millisecond)
-										resultado = Enum.map(tupla, fn x -> Fib.fibonacci(x) end)
-										time2 = :os.system_time(:millisecond)
+		receive do
+			{pid, :fib, listaValores, 1} -> IO.inspect(pid, :label "Request from client with pid: ")
+											inst1 = Time.utc_now()
+											resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
+											inst2 = Time.utc_now()
+											IO.inspect(pid, :label "Sending time to: ")
+											send (pid, {Time.diff(inst2, inst1), resultado})
+		end
+		server()
 	end
 end

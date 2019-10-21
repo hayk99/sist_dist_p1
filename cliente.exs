@@ -42,7 +42,7 @@ defmodule Cliente do
 	end
 
 	Process.sleep(2000)
-  	genera_workload(server_pid, escenario)
+  	genera_workload(server_pid, pid, escenario)
   end
   
   def clienteRecieve() do
@@ -53,11 +53,11 @@ defmodule Cliente do
 
   #desde escenario llamaré a este
   #manda peticiones al worker
-  def cliente(server_pid, tipo_escenario) do
+  def cliente(server_pid, pid, tipo_escenario) do
   	case tipo_escenario do
   	#modifica las cabeceras
-		:uno -> genera_workload(server_pid,pid, 1)
-		:dos -> genera_workload(server_pid,pid, 2)
+		:uno -> genera_workload(server_pid, pid, 1)
+		:dos -> genera_workload(server_pid, pid, 2)   #cuando lo llamamos en escenario, solo hay dos param.a, falta pid 
 		:tres -> genera_workload(server_pid, pid, 3, 1)
 	end
   end
