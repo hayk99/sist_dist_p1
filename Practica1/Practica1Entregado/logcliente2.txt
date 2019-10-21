@@ -1,0 +1,1008 @@
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1447: #PID<0.181.0>
+Tiempo total: 1448: #PID<0.181.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1466: #PID<0.182.0>
+Tiempo total: 1467: #PID<0.182.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1503: #PID<0.184.0>
+Tiempo total: 1504: #PID<0.184.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1511: #PID<0.183.0>
+Tiempo total: 1512: #PID<0.183.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1523: #PID<0.188.0>
+Tiempo total: 1524: #PID<0.188.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1574: #PID<0.185.0>
+Tiempo total: 1575: #PID<0.185.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1594: #PID<0.186.0>
+Tiempo total: 1595: #PID<0.186.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1600: #PID<0.187.0>
+Tiempo total: 1602: #PID<0.187.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1436: #PID<0.189.0>
+Tiempo total: 1437: #PID<0.189.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1465: #PID<0.191.0>
+Tiempo total: 1468: #PID<0.191.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1485: #PID<0.190.0>
+Tiempo total: 1486: #PID<0.190.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1491: #PID<0.192.0>
+Tiempo total: 1492: #PID<0.192.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1472: #PID<0.196.0>
+Tiempo total: 1473: #PID<0.196.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1493: #PID<0.193.0>
+Tiempo total: 1495: #PID<0.193.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1519: #PID<0.195.0>
+Tiempo total: 1520: #PID<0.195.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1569: #PID<0.194.0>
+Tiempo total: 1570: #PID<0.194.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1431: #PID<0.199.0>
+Tiempo total: 1433: #PID<0.199.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1435: #PID<0.200.0>
+Tiempo total: 1438: #PID<0.200.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1449: #PID<0.198.0>
+Tiempo total: 1452: #PID<0.198.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1453: #PID<0.197.0>
+Tiempo total: 1454: #PID<0.197.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1486: #PID<0.204.0>
+Tiempo total: 1487: #PID<0.204.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1491: #PID<0.202.0>
+Tiempo total: 1491: #PID<0.202.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1510: #PID<0.203.0>
+Tiempo total: 1511: #PID<0.203.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1510: #PID<0.201.0>
+Tiempo total: 1512: #PID<0.201.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1437: #PID<0.206.0>
+Tiempo total: 1437: #PID<0.206.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1481: #PID<0.205.0>
+Tiempo total: 1482: #PID<0.205.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1487: #PID<0.208.0>
+Tiempo total: 1489: #PID<0.208.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1494: #PID<0.207.0>
+Tiempo total: 1496: #PID<0.207.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1625: #PID<0.212.0>
+Tiempo total: 1627: #PID<0.212.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1665: #PID<0.209.0>
+Tiempo total: 1666: #PID<0.209.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1671: #PID<0.210.0>
+Tiempo total: 1672: #PID<0.210.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1674: #PID<0.211.0>
+Tiempo total: 1677: #PID<0.211.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1411: #PID<0.216.0>
+Tiempo total: 1412: #PID<0.216.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1439: #PID<0.213.0>
+Tiempo total: 1440: #PID<0.213.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1456: #PID<0.214.0>
+Tiempo total: 1458: #PID<0.214.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1465: #PID<0.215.0>
+Tiempo total: 1470: #PID<0.215.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1435: #PID<0.217.0>
+Tiempo total: 1436: #PID<0.217.0>
+Recibido ACK
+Recibido ACK
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1433: #PID<0.219.0>
+Tiempo de ejecucion: 1438: #PID<0.218.0>
+Tiempo de ejecucion: 1437: #PID<0.220.0>
+Tiempo total: 1440: #PID<0.219.0>
+Tiempo total: 1440: #PID<0.218.0>
+Tiempo total: 1440: #PID<0.220.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1558: #PID<0.222.0>
+Tiempo total: 1559: #PID<0.222.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1627: #PID<0.221.0>
+Tiempo total: 1628: #PID<0.221.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1640: #PID<0.223.0>
+Tiempo total: 1642: #PID<0.223.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1654: #PID<0.224.0>
+Tiempo total: 1655: #PID<0.224.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1487: #PID<0.226.0>
+Tiempo total: 1488: #PID<0.226.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1516: #PID<0.225.0>
+Tiempo total: 1519: #PID<0.225.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1546: #PID<0.227.0>
+Tiempo total: 1550: #PID<0.227.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1567: #PID<0.228.0>
+Tiempo total: 1572: #PID<0.228.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1572: #PID<0.232.0>
+Tiempo total: 1573: #PID<0.232.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1654: #PID<0.229.0>
+Tiempo total: 1656: #PID<0.229.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1732: #PID<0.231.0>
+Tiempo total: 1734: #PID<0.231.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1760: #PID<0.230.0>
+Tiempo total: 1761: #PID<0.230.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1624: #PID<0.233.0>
+Tiempo total: 1624: #PID<0.233.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1667: #PID<0.236.0>
+Tiempo total: 1669: #PID<0.236.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1807: #PID<0.234.0>
+Tiempo total: 1808: #PID<0.234.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1822: #PID<0.235.0>
+Tiempo total: 1824: #PID<0.235.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1433: #PID<0.237.0>
+Tiempo total: 1434: #PID<0.237.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1455: #PID<0.238.0>
+Tiempo total: 1456: #PID<0.238.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1463: #PID<0.239.0>
+Tiempo total: 1465: #PID<0.239.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1476: #PID<0.240.0>
+Tiempo total: 1477: #PID<0.240.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1465: #PID<0.242.0>
+Tiempo total: 1466: #PID<0.242.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1466: #PID<0.241.0>
+Tiempo total: 1471: #PID<0.241.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1487: #PID<0.243.0>
+Tiempo total: 1489: #PID<0.243.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1496: #PID<0.244.0>
+Tiempo total: 1497: #PID<0.244.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1501: #PID<0.245.0>
+Tiempo total: 1502: #PID<0.245.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1514: #PID<0.248.0>
+Tiempo total: 1515: #PID<0.248.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1516: #PID<0.247.0>
+Tiempo total: 1519: #PID<0.247.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1544: #PID<0.246.0>
+Tiempo total: 1545: #PID<0.246.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1451: #PID<0.250.0>
+Tiempo total: 1452: #PID<0.250.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1470: #PID<0.252.0>
+Tiempo total: 1472: #PID<0.252.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1476: #PID<0.249.0>
+Tiempo total: 1478: #PID<0.249.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1491: #PID<0.251.0>
+Tiempo total: 1493: #PID<0.251.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1487: #PID<0.256.0>
+Tiempo total: 1489: #PID<0.256.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1519: #PID<0.255.0>
+Tiempo total: 1520: #PID<0.255.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1526: #PID<0.253.0>
+Tiempo total: 1527: #PID<0.253.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1538: #PID<0.254.0>
+Tiempo total: 1539: #PID<0.254.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1502: #PID<0.259.0>
+Tiempo total: 1504: #PID<0.259.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1516: #PID<0.257.0>
+Tiempo total: 1517: #PID<0.257.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1520: #PID<0.258.0>
+Tiempo total: 1521: #PID<0.258.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1527: #PID<0.260.0>
+Tiempo total: 1528: #PID<0.260.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1445: #PID<0.263.0>
+Tiempo total: 1447: #PID<0.263.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1518: #PID<0.264.0>
+Tiempo total: 1519: #PID<0.264.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1537: #PID<0.262.0>
+Tiempo total: 1538: #PID<0.262.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1556: #PID<0.261.0>
+Tiempo total: 1557: #PID<0.261.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1523: #PID<0.265.0>
+Tiempo total: 1524: #PID<0.265.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1600: #PID<0.266.0>
+Tiempo total: 1601: #PID<0.266.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1607: #PID<0.267.0>
+Tiempo total: 1609: #PID<0.267.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1672: #PID<0.268.0>
+Tiempo total: 1674: #PID<0.268.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1551: #PID<0.272.0>
+Tiempo total: 1553: #PID<0.272.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1597: #PID<0.271.0>
+Tiempo total: 1599: #PID<0.271.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1599: #PID<0.270.0>
+Tiempo total: 1601: #PID<0.270.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1616: #PID<0.269.0>
+Tiempo total: 1617: #PID<0.269.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1528: #PID<0.276.0>
+Tiempo total: 1531: #PID<0.276.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1553: #PID<0.274.0>
+Tiempo total: 1556: #PID<0.274.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1571: #PID<0.273.0>
+Tiempo total: 1573: #PID<0.273.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1574: #PID<0.275.0>
+Tiempo total: 1577: #PID<0.275.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1448: #PID<0.280.0>
+Tiempo total: 1453: #PID<0.280.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1470: #PID<0.279.0>
+Tiempo total: 1475: #PID<0.279.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1517: #PID<0.277.0>
+Tiempo total: 1518: #PID<0.277.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1553: #PID<0.278.0>
+Tiempo total: 1559: #PID<0.278.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1441: #PID<0.281.0>
+Tiempo total: 1443: #PID<0.281.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1449: #PID<0.284.0>
+Tiempo total: 1450: #PID<0.284.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1461: #PID<0.282.0>
+Tiempo total: 1462: #PID<0.282.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1480: #PID<0.283.0>
+Tiempo total: 1483: #PID<0.283.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1538: #PID<0.288.0>
+Tiempo total: 1539: #PID<0.288.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1554: #PID<0.287.0>
+Tiempo total: 1556: #PID<0.287.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1575: #PID<0.286.0>
+Tiempo total: 1576: #PID<0.286.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1602: #PID<0.285.0>
+Tiempo total: 1603: #PID<0.285.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1571: #PID<0.291.0>
+Tiempo total: 1573: #PID<0.291.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1603: #PID<0.292.0>
+Tiempo total: 1605: #PID<0.292.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1605: #PID<0.289.0>
+Tiempo total: 1606: #PID<0.289.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1616: #PID<0.290.0>
+Tiempo total: 1617: #PID<0.290.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1516: #PID<0.295.0>
+Tiempo total: 1517: #PID<0.295.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1538: #PID<0.296.0>
+Tiempo total: 1540: #PID<0.296.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1546: #PID<0.293.0>
+Tiempo total: 1547: #PID<0.293.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1601: #PID<0.294.0>
+Tiempo total: 1602: #PID<0.294.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1454: #PID<0.297.0>
+Tiempo total: 1455: #PID<0.297.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1462: #PID<0.299.0>
+Tiempo total: 1463: #PID<0.299.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1471: #PID<0.300.0>
+Tiempo total: 1477: #PID<0.300.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1478: #PID<0.298.0>
+Tiempo total: 1479: #PID<0.298.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1487: #PID<0.303.0>
+Tiempo total: 1489: #PID<0.303.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1492: #PID<0.304.0>
+Tiempo total: 1503: #PID<0.304.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1503: #PID<0.301.0>
+Tiempo total: 1504: #PID<0.301.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1508: #PID<0.302.0>
+Tiempo total: 1510: #PID<0.302.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1408: #PID<0.308.0>
+Tiempo total: 1411: #PID<0.308.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1414: #PID<0.307.0>
+Tiempo total: 1421: #PID<0.307.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1438: #PID<0.306.0>
+Tiempo total: 1439: #PID<0.306.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1439: #PID<0.305.0>
+Tiempo total: 1440: #PID<0.305.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1424: #PID<0.312.0>
+Tiempo total: 1427: #PID<0.312.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1434: #PID<0.310.0>
+Tiempo total: 1435: #PID<0.310.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1449: #PID<0.311.0>
+Tiempo total: 1452: #PID<0.311.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1462: #PID<0.309.0>
+Tiempo total: 1463: #PID<0.309.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1406: #PID<0.314.0>
+Tiempo total: 1411: #PID<0.314.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1420: #PID<0.315.0>
+Tiempo total: 1421: #PID<0.315.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1426: #PID<0.316.0>
+Tiempo total: 1428: #PID<0.316.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1435: #PID<0.313.0>
+Tiempo total: 1436: #PID<0.313.0>
+-----------------------------------------------------
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Enviando peticion a servidor@127.0.0.1
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Peticiendo enviada desde : :"cliente@127.0.0.1"
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Esperando contestacion
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1437: #PID<0.320.0>
+Tiempo total: 1439: #PID<0.320.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1440: #PID<0.317.0>
+Tiempo total: 1441: #PID<0.317.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1443: #PID<0.319.0>
+Tiempo total: 1445: #PID<0.319.0>
+Recibido ACK
+Los cuatro numeros perfectos son: [6, 28, 496, 8128]
+Tiempo de ejecucion: 1459: #PID<0.318.0>
+Tiempo total: 1460: #PID<0.318.0>
+^C
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
