@@ -38,11 +38,13 @@ defmodule Cliente do
 
   def launch(pid, op, 1) do
 	send(pid, {self, op, 1..36, 1})
+	spawn(Cliente.:recieve, [])
   end
 
   def launch(pid, op, n) when n != 1 do
 	send(pid, [self, op, 1..36, n])
 	launch(pid, op, n - 1)
+	spawn 
   end 
   
   def genera_workload(server_pid, pid, escenario, time) do
@@ -61,6 +63,7 @@ defmodule Cliente do
 	else
 		launch(server_pid, :fib, 4)
 	end
+
 	Process.sleep(2000)
   	genera_workload(server_pid, escenario)
   end
