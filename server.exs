@@ -25,14 +25,23 @@ end
 
 
 defmodule Server do
+	def calculoFib(pid, listaValores) do
+		inst1 = Time.utc_now()
+		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
+		inst2 = Time.utc_now()
+		IO.inspect(pid, :label "Sending time to: ")
+		send (pid, {Time.diff(inst2, inst1), resultado})
+	end
+
+
+
+
 	def server() do
 		receive do
 			{pid, :fib, listaValores, 1} -> IO.inspect(pid, :label "Request from client with pid: ")
-											inst1 = Time.utc_now()
-											resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
-											inst2 = Time.utc_now()
-											IO.inspect(pid, :label "Sending time to: ")
-											send (pid, {Time.diff(inst2, inst1), resultado})
+											# tenemos la disponibilidad y tenemos que lanzar el thread
+											spawn(Server, :calculoFib, [pid, listaValores])
+
 		end
 		server()
 	end
