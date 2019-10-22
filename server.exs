@@ -1,7 +1,7 @@
 escenario = :dos
 dir_server = :"server@10.1.55.98"
 num_workers = 4
-dir_worker = :"workers@10.1.63.216"
+dir_worker = :"workers@10.1.55.98"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -52,10 +52,9 @@ defmodule Server do
 
 	def server() do
 		receive do
-			{pid, :fib, listaValores, 1} -> IO.inspect(pid, label: "Request from client with pid: ")
+			{pid, :fib, listaValores, n} -> IO.inspect(pid, label: "Request from client with pid: ")
 											# tenemos la disponibilidad y tenemos que lanzar el thread
-											#spawn(Server, :calculoFib, [pid, listaValores])
-
+											spawn(Server, :calculoFib, [pid, listaValores])
 		end
 		server()
 	end
@@ -79,6 +78,6 @@ end
 
 case escenario do 
 	:uno ->		Server.lunchServer(dir_server)
-	:dos ->		Server.lunchMaster(dir_server, dir_worker)
+	:dos ->		Server.lunchServer(dir_server)
 	:tres ->	Server.lunchServer(dir_server, num_workers)
 end

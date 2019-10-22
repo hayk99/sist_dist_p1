@@ -1,4 +1,4 @@
-dir_worker=:"workers@10.1.63.216"
+dir_worker=:"workers@10.1.55.98"
 dir_master=:"master@10.1.55.98"
 defmodule Fib do
 	def fibonacci(0), do: 0
