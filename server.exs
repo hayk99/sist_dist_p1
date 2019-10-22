@@ -33,9 +33,6 @@ defmodule Server do
 		send (pid, {Time.diff(inst2, inst1), resultado})
 	end
 
-
-
-
 	def server() do
 		receive do
 			{pid, :fib, listaValores, 1} -> IO.inspect(pid, :label "Request from client with pid: ")
@@ -44,5 +41,12 @@ defmodule Server do
 
 		end
 		server()
+	end
+	
+	def lunchServer (dirs) do
+		Process.register(self(), :server)
+		Node.set_cookie(self(), :galleta)
+		IO.puts("Server is up")
+		Server.server()
 	end
 end
