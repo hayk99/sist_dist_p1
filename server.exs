@@ -1,3 +1,7 @@
+escenario = :uno
+dir_server = :"server@10.1.63.216"
+num_workers = 1
+
 defmodule Fib do
 	def fibonacci(0), do: 0
 	def fibonacci(1), do: 1
@@ -29,24 +33,32 @@ defmodule Server do
 		inst1 = Time.utc_now()
 		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
 		inst2 = Time.utc_now()
-		IO.inspect(pid, :label "Sending time to: ")
-		send (pid, {Time.diff(inst2, inst1), resultado})
+		IO.inspect(pid, label: "Sending time to: ")
+		tiempo = Time.diff(inst2,inst1)
+		send(pid, {:fin, tiempo, resultado})
 	end
 
 	def server() do
 		receive do
-			{pid, :fib, listaValores, 1} -> IO.inspect(pid, :label "Request from client with pid: ")
+			{pid, :fib, listaValores, 1} -> IO.inspect(pid, label: "Request from client with pid: ")
 											# tenemos la disponibilidad y tenemos que lanzar el thread
 											spawn(Server, :calculoFib, [pid, listaValores])
 
 		end
 		server()
 	end
-	
+
 	def lunchServer (dirs) do
+		Node.start dirs
 		Process.register(self(), :server)
-		Node.set_cookie(self(), :galleta)
+		Node.set_cookie(:cookie)
 		IO.puts("Server is up")
 		Server.server()
 	end
+end
+
+case escenario do 
+	:uno ->		Server.lunchServer(dir_server)
+	:dos ->		Server.lunchServer(dir_server)
+	:tres ->	Server.lunchServer(dir_server, num_workers)
 end

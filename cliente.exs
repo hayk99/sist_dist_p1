@@ -9,18 +9,22 @@
  #			 	Las opciones de invocaci'on son: Fib.fibonacci(n), Fib.fibonacci_rt(n), Fib.of(n)
  #				M'odulo de operaciones para el cliente (generador de carga de trabajo)
 
+escenario = :uno
+dir_server = :"server@10.1.63.216"
+dir_client = :"client@10.1.63.216"
+
 defmodule Cliente do
 
 
 	def launch(server_pid, op, 1) do
 
-		pid = spawn(Cliente, :clienteRecieve, [])
+		pid = spawn(Cliente, :clienteReceive, [])
 		send(server_pid, {pid, op, 1..36, 1})
 	end
 
 	def launch(server_pid, op, n) when n != 1 do
-		pid = spawn(Cliente, :clienteRecieve, [])
-		send(server_pid, [self, op, 1..36, n])
+		pid = spawn(Cliente, :clienteReceive, [])
+		send(server_pid, [self(), op, 1..36, n])
 		launch(pid, op, n - 1)
 	end 
 	
@@ -45,9 +49,9 @@ defmodule Cliente do
 		genera_workload(server_pid, escenario)
 	end
 	
-	def clienteRecieve() do
-		recieve do
-			{:fin, listaFib} -> IO.inspect(listaFib, label: "Toma lista crack ")
+	def clienteReceive() do
+		receive do
+			{:fin, time, listaFib} -> IO.inspect(listaFib, label: "Toma lista crack \n\n")
 		end
 	end
 
@@ -63,15 +67,17 @@ defmodule Cliente do
 	end
 
  	def lunchClient(server_name, escenario, dir_server, dir_client) do
+ 		Node.start dir_client
 		Process.register(self(), :client)
 		Node.set_cookie(:cookie)
 		Node.connect(dir_server)
-		clienteente.cliente({server_name, dir_server}, escenario)
+		IO.puts "Conection done"
+		Cliente.cliente({server_name, dir_server}, escenario)
 	end
 
 end
 
-
+Cliente.lunchClient(:server, escenario, dir_server, dir_client)
 #dos opciones, si creo el proceso recibir antes de generar workload, cuando vaya a medir timepos de ejecución no sabre identificar los procesos, 
 #para ello tendré que llevar un id de proceso
 # la otra opcion es lanzar uno por cada launch, para ello genero un pid y le mando su pid y se dónde lo recibiré
