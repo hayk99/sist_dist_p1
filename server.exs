@@ -1,6 +1,7 @@
-escenario = :uno
-dir_server = :"server@10.1.63.216"
-num_workers = 1
+escenario = :dos
+dir_server = :"server@10.1.55.98"
+num_workers = 4
+dir_worker = :"workers@10.1.63.216"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -29,36 +30,55 @@ end
 
 
 defmodule Server do
-	def calculoFib(pid, listaValores) do
-		inst1 = Time.utc_now()
-		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
-		inst2 = Time.utc_now()
-		IO.inspect(pid, label: "Sending time to: ")
-		tiempo = Time.diff(inst2,inst1)
-		send(pid, {:fin, tiempo, resultado})
+#	def calculoFib(pid, listaValores) do
+#		inst1 = Time.utc_now()
+#		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
+#		inst2 = Time.utc_now()
+#		IO.inspect(pid, label: "Sending time to: ")
+#		tiempo = Time.diff(inst2,inst1)
+#		send(pid, {:fin, tiempo, resultado})
+#	end
+
+	def master(dir_worker) do
+		receive do
+			{pid, :fib, listaValores, n} -> IO.inspect(pid, label: "nada from client with pid: ")
+											IO.puts "mando faena"
+											Node.spawn(dir_worker, Workers,  :calculoFib, [pid, listaValores])
+											IO.puts "faena mandada"
+
+		end
+		master(dir_worker)
 	end
 
 	def server() do
 		receive do
 			{pid, :fib, listaValores, 1} -> IO.inspect(pid, label: "Request from client with pid: ")
 											# tenemos la disponibilidad y tenemos que lanzar el thread
-											spawn(Server, :calculoFib, [pid, listaValores])
+											#spawn(Server, :calculoFib, [pid, listaValores])
 
 		end
 		server()
 	end
 
-	def lunchServer (dirs) do
+	def lunchServer(dirs) do
 		Node.start dirs
 		Process.register(self(), :server)
 		Node.set_cookie(:cookie)
 		IO.puts("Server is up")
 		Server.server()
 	end
+
+	def lunchMaster(dirs, dir_worker) do
+		Node.start dirs
+		Process.register(self(), :server)
+		Node.set_cookie(:cookie)
+		IO.puts("Master is up")
+		Server.master(dir_worker)
+	end
 end
 
 case escenario do 
 	:uno ->		Server.lunchServer(dir_server)
-	:dos ->		Server.lunchServer(dir_server)
+	:dos ->		Server.lunchMaster(dir_server, dir_worker)
 	:tres ->	Server.lunchServer(dir_server, num_workers)
 end

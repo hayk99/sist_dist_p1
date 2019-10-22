@@ -9,23 +9,22 @@
  #			 	Las opciones de invocaci'on son: Fib.fibonacci(n), Fib.fibonacci_rt(n), Fib.of(n)
  #				M'odulo de operaciones para el cliente (generador de carga de trabajo)
 
-escenario = :uno
-dir_server = :"server@10.1.63.216"
-dir_client = :"client@10.1.63.216"
+escenario = :dos
+dir_server = :"server@10.1.55.98"
+dir_client = :"client@10.1.55.98"
 
 defmodule Cliente do
 
 
 	def launch(server_pid, op, 1) do
-
-		pid = spawn(Cliente, :clienteReceive, [])
+		pid = spawn(Cliente, :clienteReceive, [Time.utc_now()])
 		send(server_pid, {pid, op, 1..36, 1})
 	end
 
 	def launch(server_pid, op, n) when n != 1 do
-		pid = spawn(Cliente, :clienteReceive, [])
-		send(server_pid, [self(), op, 1..36, n])
-		launch(pid, op, n - 1)
+		pid = spawn(Cliente, :clienteReceive, [Time.utc_now()])
+		send(server_pid, {pid, op, 1..36, n})
+		launch(server_pid, op, n - 1)
 	end 
 	
 	def genera_workload(server_pid, escenario, time) do
@@ -49,9 +48,12 @@ defmodule Cliente do
 		genera_workload(server_pid, escenario)
 	end
 	
-	def clienteReceive() do
+	def clienteReceive(inst1) do
 		receive do
-			{:fin, time, listaFib} -> IO.inspect(listaFib, label: "Toma lista crack \n\n")
+			{:fin, time, listaFib} ->  inst2 = Time.utc_now()
+                                 IO.inspect(listaFib, label: "Toma lista crack \n\n")
+                                 IO.inspect(Time.diff(inst2, inst1), label: "Tenemos el tiempo: ")
+
 		end
 	end
 
