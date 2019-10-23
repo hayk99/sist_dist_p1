@@ -1,7 +1,8 @@
 freeWorkers = []
 bloqueds = []
+dir_pool=:"pool@"
 defmodule pool do
-	def pool() do
+	def Pool() do
 		receive do
 			{pid_hilo, :req_wk}  -> IO.puts "Master needs a worker"
 								int len = length(freeWorkers)
@@ -27,8 +28,17 @@ defmodule pool do
 										IO.puts "No tengo bloqueados, añado wk a la lista"
 										freeWorkers ++ [dir_wk]
 								end
+			{:firstLog, dir_wk} -> IO.puts "Worker machine is up, log 4 cores..."
+									freeWorkers ++ [dir_wk] ++ [dir_wk] ++ [dir_wk] ++ [dir_wk]
 		end
 		pool()
 	end
+	def start(dir_pool) do
+		Node.start dir_pool
+		Process.register(self(),:pool)
+		Node.set_cookie(:cookie)
+		IO.puts "Pool is up"
+		Pool.pool()
+	end
 end
-#he pensado que podemos lanzar threads internos en pool para que se encarguen de añadir o quitar de las listas y de esta forma no saturar el receive principal del pool
+Pool.start(dir_pool)

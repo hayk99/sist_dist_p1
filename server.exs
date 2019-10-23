@@ -43,7 +43,7 @@ defmodule Server do
 
 		send(dir_pool, {self() , :req_wk})
 		receive do
-			{:wk_free, pid_worker} -> send(pid_worker, {:start, self(), op, listaValores})
+			{:wk_free, pid_worker} -> Node.spawn(pid_worker, Workers, :workForMe, {slef(), op, listaValores})
 			receive do
 				{:resul, time_ex, result} -> send(pid_client, {:fin, time_ex, result})
 			end

@@ -26,29 +26,21 @@ defmodule Fib do
 end	
 
 defmodule Workers do
-	def ready do
-		receive do
-			{:start, pid_master, op, listaValores} -> IO.puts "comienzo calculo..."
-													cond do 
-														op == "fibonacci" ->
-															inst1 = Time.utc_now()
-															resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
-														op == "fibonacci_tr" ->
-															inst1 = Time.utc_now()
-															resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
-													end
-													inst2 = Time.utc_now()
-													IO.inspect(pid, label: "Sending time to: ")
-													tiempo = Time.diff(inst2,inst1)
-													send(pid_master, {:resul, tiempo, resultado})
-													send(pid_pool, {:ready, self()})
+	def workForMe(pid_master,op, listaValores) do
+		IO.puts "comienzo calculo..."
+		cond do 
+			op == "fibonacci" ->
+				inst1 = Time.utc_now()
+				resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
+			op == "fibonacci_tr" ->
+				inst1 = Time.utc_now()
+				resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
 		end
-		ready()
-	end
-	def lunch(n) when n > 0 do
-		pid = spawn(Workers, :ready, [])
-		send(pid_pool, {:ready, pid)
-		lunch(n-1) 
+		inst2 = Time.utc_now()
+		IO.inspect(pid, label: "Sending time to: ")
+		tiempo = Time.diff(inst2,inst1)
+		send(pid_master, {:resul, tiempo, resultado})
+		send(pid_pool, {:ready, self()})
 	end
 #	def calculoFib(pid_master, pid_pool, op, listaValores) do
 
@@ -57,9 +49,10 @@ defmodule Workers do
 		Process.register(self(),:workers)
 		Node.set_cookie(:cookie)
 		Node.connect(dir_pool)
-		Workers.lunch(4)
+		Node.connect(dir_master)
+		send(dir_pool, {:firstLog, dir_workerr})
 		IO.puts "Workers is up"
 	end
 end
 
-Workers.start(dir_worker, dir_pool)
+Workers.start(dir_worker, dir_pool, dir_master)
