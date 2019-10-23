@@ -41,9 +41,12 @@ defmodule Server do
 
 	def peticionPool(pid_client, dir_pool, listaValores) do
 
-		send(dir_pool, {self() ,:fib ,listaValores})
+		send(dir_pool, {self() , :req_wk})
 		receive do
-			{:fin_worker, time_ex, resultado} -> send(pid_client, {:fin, time_ex, resultado})
+			{:wk_free, pid_worker} -> send(pid_worker, {:start, self(), op, listaValores})
+			receive do
+				{:resul, time_ex, result} -> send(pid_client, {:fin, time_ex, result})
+			end
 		end
 	end
 
@@ -73,10 +76,8 @@ defmodule Server do
 	def lunchMaster(dirs, dir_pool) do
 		Node.start dirs
 		Process.register(self(), :server)
-		Process.register(self(), :master)
 		Node.set_cookie(:cookie)
 		IO.puts("Master is up")
-		IO.inspect(Process.registered())
 		Server.master(dir_pool)
 	end
 end
