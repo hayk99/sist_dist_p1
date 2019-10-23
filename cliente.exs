@@ -9,7 +9,7 @@
  #			 	Las opciones de invocaci'on son: Fib.fibonacci(n), Fib.fibonacci_rt(n), Fib.of(n)
  #				M'odulo de operaciones para el cliente (generador de carga de trabajo)
 
-escenario = :uno
+escenario = :dos
 dir_server = :"server@10.1.58.239"
 dir_client = :"client@10.1.55.98"
 
