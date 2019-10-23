@@ -1,7 +1,7 @@
 escenario = :uno
-dir_server = :"server@127.0.0.1"
+dir_server = :"server@10.1.58.239"
 num_workers = 4
-dir_worker = :"workers@127.0.0.1"
+dir_worker = :"workers@10.1.55.98"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -32,10 +32,10 @@ end
 defmodule Server do
 	def calculoFib(pid, listaValores) do
 		inst1 = Time.utc_now()
-		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
+		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
 		inst2 = Time.utc_now()
 		IO.inspect(pid, label: "Sending time to: ")
-		tiempo = Time.diff(inst2,inst1, :microseconds)
+		tiempo = Time.diff(inst2,inst1, :milliseconds)
 		send(pid, {:fin, tiempo, resultado})
 	end
 

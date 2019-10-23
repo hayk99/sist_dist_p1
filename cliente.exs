@@ -10,8 +10,8 @@
  #				M'odulo de operaciones para el cliente (generador de carga de trabajo)
 
 escenario = :uno
-dir_server = :"server@127.0.0.1"
-dir_client = :"client@127.0.0.1"
+dir_server = :"server@10.1.58.239"
+dir_client = :"client@10.1.55.98"
 
 defmodule Cliente do
 
@@ -37,8 +37,8 @@ defmodule Cliente do
 			genera_workload(server_pid, escenario, rem(time + 1, 10))
 		end
 
-		def genera_workload(server_pid, escenario) do
-			if escenario == 1 do
+	def genera_workload(server_pid, escenario) do
+		if escenario == 1 do
 			launch(server_pid, :fib, 1)
 		else
 			launch(server_pid, :fib, 4)
@@ -52,8 +52,8 @@ defmodule Cliente do
 		receive do
 			{:fin, time, listaFib} ->  inst2 = Time.utc_now()
 									IO.inspect(time, label: "El tiempo de ejecucion: ")
+                                	IO.inspect(Time.diff(inst2, inst1, :milliseconds), label: "El tiempo total: ")
                                 	IO.inspect(listaFib, label: "Toma lista crack \n\n")
-                                	IO.inspect(Time.diff(inst2, inst1, :microseconds), label: "El tiempo total: ")
                                 	#if ()
 
 		end
@@ -64,9 +64,9 @@ defmodule Cliente do
 	def cliente(server_pid, tipo_escenario) do
 		case tipo_escenario do
 		#modifica las cabeceras
-		:uno -> genera_workload(server_pid, 1)
-		:dos -> genera_workload(server_pid, 2) 
-		:tres -> genera_workload(server_pid, 3, 1)
+			:uno -> genera_workload(server_pid, 1)
+			:dos -> genera_workload(server_pid, 2) 
+			:tres -> genera_workload(server_pid, 3, 1)
 	end
 	end
 
