@@ -1,7 +1,7 @@
-escenario = :uno
+escenario = :tres
 dir_server = :"server@10.1.58.239"
 num_workers = 4
-dir_worker = :"workers@10.1.55.98"
+dir_pool = :"workers@10.1.55.98"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -39,15 +39,19 @@ defmodule Server do
 		send(pid, {:fin, tiempo, resultado})
 	end
 
-	def master(dir_worker) do
-		receive do
-			{pid, :fib, listaValores, n} -> IO.inspect(pid, label: "nada from client with pid: ")
-											IO.puts "mando faena"
-											Node.spawn(dir_worker, Workers,  :calculoFib, [pid, listaValores])
-											IO.puts "faena mandada"
+	def peticionPool(pid_client, dir_pool, listaValores) do
 
+		send(dir_pool, {self() ,:fib ,listaValores})
+		receive do
+			{:fin_worker, time_ex, resultado} -> send(pid_client, {:fin, time_ex, resultado})
 		end
-		master(dir_worker)
+	end
+
+	def master(dir_pool) do
+		receive do
+			{pid, :fib, listaValores, n} -> spawn(Server, :peticionPool, [pid, dir_pool, listaValores])
+		end
+		master(dir_pool)
 	end
 
 	def server() do
@@ -66,17 +70,19 @@ defmodule Server do
 		Server.server()
 	end
 
-	def lunchMaster(dirs, dir_worker) do
+	def lunchMaster(dirs, dir_pool) do
 		Node.start dirs
 		Process.register(self(), :server)
+		Process.register(self(), :master)
 		Node.set_cookie(:cookie)
 		IO.puts("Master is up")
-		Server.master(dir_worker)
+		IO.inspect(Process.registered())
+		Server.master(dir_pool)
 	end
 end
 
 case escenario do 
 	:uno ->		Server.lunchServer(dir_server)
 	:dos ->		Server.lunchServer(dir_server)
-	:tres ->	Server.lunchServer(dir_server, num_workers)
+	:tres ->	Server.lunchMaster(dir_server, dir_pool)
 end
