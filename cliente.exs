@@ -9,9 +9,9 @@
  #			 	Las opciones de invocaci'on son: Fib.fibonacci(n), Fib.fibonacci_rt(n), Fib.of(n)
  #				M'odulo de operaciones para el cliente (generador de carga de trabajo)
 
-escenario = :dos
-dir_server = :"server@10.1.55.98"
-dir_client = :"client@10.1.55.98"
+escenario = :uno
+dir_server = :"server@127.0.0.1"
+dir_client = :"client@127.0.0.1"
 
 defmodule Cliente do
 
@@ -51,8 +51,10 @@ defmodule Cliente do
 	def clienteReceive(inst1) do
 		receive do
 			{:fin, time, listaFib} ->  inst2 = Time.utc_now()
-                                 IO.inspect(listaFib, label: "Toma lista crack \n\n")
-                                 IO.inspect(Time.diff(inst2, inst1), label: "Tenemos el tiempo: ")
+									IO.inspect(time, label: "El tiempo de ejecucion: ")
+                                	IO.inspect(listaFib, label: "Toma lista crack \n\n")
+                                	IO.inspect(Time.diff(inst2, inst1, :microseconds), label: "El tiempo total: ")
+                                	#if ()
 
 		end
 	end

@@ -1,7 +1,7 @@
-escenario = :dos
-dir_server = :"server@10.1.55.98"
+escenario = :uno
+dir_server = :"server@127.0.0.1"
 num_workers = 4
-dir_worker = :"workers@10.1.55.98"
+dir_worker = :"workers@127.0.0.1"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -30,14 +30,14 @@ end
 
 
 defmodule Server do
-#	def calculoFib(pid, listaValores) do
-#		inst1 = Time.utc_now()
-#		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
-#		inst2 = Time.utc_now()
-#		IO.inspect(pid, label: "Sending time to: ")
-#		tiempo = Time.diff(inst2,inst1)
-#		send(pid, {:fin, tiempo, resultado})
-#	end
+	def calculoFib(pid, listaValores) do
+		inst1 = Time.utc_now()
+		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
+		inst2 = Time.utc_now()
+		IO.inspect(pid, label: "Sending time to: ")
+		tiempo = Time.diff(inst2,inst1, :microseconds)
+		send(pid, {:fin, tiempo, resultado})
+	end
 
 	def master(dir_worker) do
 		receive do
@@ -53,7 +53,6 @@ defmodule Server do
 	def server() do
 		receive do
 			{pid, :fib, listaValores, n} -> IO.inspect(pid, label: "Request from client with pid: ")
-											# tenemos la disponibilidad y tenemos que lanzar el thread
 											spawn(Server, :calculoFib, [pid, listaValores])
 		end
 		server()
