@@ -30,27 +30,20 @@ defmodule Fib do
 end	
 
 defmodule Workers do
-	def workForMe(pid_client, pid_pool,op, listaValores, inst1, resultado) do
-		IO.puts "comienzo calculo..."
-		inst1 = 0 
-		resultado = 0
-		cond do 
-			op==:fib -> inst1 = Time.utc_now()
-								resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
-			op==:fib_tr -> inst1 = Time.utc_now()
-								resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
+	def workForMe(pid_client, pid_pool,op, listaValores) do
+		inst1 = Time.utc_now()
+		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
+		if op==:fib_tr do	
+			resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
 		end
 		inst2 = Time.utc_now()
-		IO.inspect(pid_client)
-		IO.inspect(pid_pool)
-		#tiempo = Time.diff(inst2,inst1, :milliseconds)
-		send(pid_client, {:resul,inst1, inst2, resultado})
-		IO.inspect(pid_client, label: "Sending time to: ")
+		tiempo = Time.diff(inst2,inst1, :milliseconds)
+		send(pid_client, {:resul, tiempo, resultado})
 		send(pid_pool, {:ready, self()})
 	end
-#	def calculoFib(pid_client, pid_pool, op, listaValores) do
 
-	def start(dir_worker, dir_pool, inst1, resultado)do
+
+	def start(dir_worker, dir_pool)do
 		Node.start dir_worker
 		Process.register(self(),:workers)
 		Node.set_cookie(:cookie)
@@ -60,4 +53,4 @@ defmodule Workers do
 	end
 end
 
-Workers.start(dir_worker, dir_pool,0,0)
+Workers.start(dir_worker, dir_pool)

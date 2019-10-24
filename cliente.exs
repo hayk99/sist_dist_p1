@@ -23,14 +23,12 @@ defmodule Cliente do
 	def launch(server_pid, op, 1) do
 		pid = spawn(Cliente, :clienteReceive, [Time.utc_now()])
 		send(server_pid, {pid, op, 1..36, 1})
-		IO.puts "Sent"
 	end
 
 	def launch(server_pid, op, n) when n != 1 do
 		pid = spawn(Cliente, :clienteReceive, [Time.utc_now()])
 		send(server_pid, {pid, op, 1..36, n})
 		launch(server_pid, op, n - 1)
-		IO.puts "Sent"
 	end 
 	
 	def genera_workload(server_pid, escenario, time) do
@@ -58,12 +56,7 @@ defmodule Cliente do
 		receive do
 			{:resul, time_ex, result} ->  inst2 = Time.utc_now()
 										IO.inspect(time_ex, label: "El tiempo de ejecucion: ")
-                                		IO.inspect(Time.diff(inst2, time_ex, :milliseconds), label: "El tiempo total: ")
-                                		IO.inspect(result, label: "Toma lista crack \n\n")
-            {:resul, time1, time2, result} -> inst2 = Time.utc_now()
-										time_ex = Time.diff(time2, time1,:milliseconds)
-										IO.inspect(time_ex, label: "El tiempo de ejecucion: ")
-                                		IO.inspect(Time.diff(inst2, time_ex, :milliseconds), label: "El tiempo total: ")
+                                		IO.inspect(Time.diff(inst2, inst1, :milliseconds), label: "El tiempo total: ")
                                 		IO.inspect(result, label: "Toma lista crack \n\n")
 		end
 	end
@@ -91,11 +84,3 @@ defmodule Cliente do
 end
 
 Cliente.lunchClient(:server, escenario, dir_server, dir_client)
-#dos opciones, si creo el proceso recibir antes de generar workload, cuando vaya a medir timepos de ejecución no sabre identificar los procesos, 
-#para ello tendré que llevar un id de proceso
-# la otra opcion es lanzar uno por cada launch, para ello genero un pid y le mando su pid y se dónde lo recibiré
-
-#pegar codigo del modulo en cliente de iex
-#Cliete.cliente({pidServer,:uno/:dos/:tres})
-#pool_-> master escucha constantemente, cuando le llega una petición lanza thread y está pendiente de las peticiones mientras tnato. 
-#Cuando lanza un thread pide permiso al pool para poder usar un worker y hasta que no se lo conceda no avanza.

@@ -38,17 +38,14 @@ defmodule Server do
 		inst1 = Time.utc_now()
 		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
 		inst2 = Time.utc_now()
-		IO.inspect(pid, label: "Sending time to: ")
 		tiempo = Time.diff(inst2,inst1, :milliseconds)
-		send(pid, {:fin, tiempo, resultado})
+		send(pid, {:resul, tiempo, resultado})
 	end
 
 	def peticionPool(pid_client, dir_pool, listaValores, op) do
 		send({:pool,dir_pool}, {self() , :req__wk})
 		receive do
-			{:wk_free, dir_worker, pid_pool} -> IO.puts "received wk"
-												Node.spawn(dir_worker, Workers, :workForMe, [pid_client, pid_pool, op, listaValores, 0, 0])
-												IO.puts "sent"
+			{:wk_free, dir_worker, pid_pool} -> Node.spawn(dir_worker, Workers, :workForMe, [pid_client, pid_pool, op, listaValores])
 		end
 	end
 
@@ -61,8 +58,7 @@ defmodule Server do
 
 	def server() do
 		receive do
-			{pid, :fib, listaValores, n} -> IO.inspect(pid, label: "Request from client with pid: ")
-											spawn(Server, :calculoFib, [pid, listaValores])
+			{pid, :fib, listaValores, n} ->	spawn(Server, :calculoFib, [pid, listaValores])
 		end
 		server() 
 	end

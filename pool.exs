@@ -9,33 +9,30 @@ defmodule Pool do
 										len = length(freeWorkers)
 										IO.puts len
 										cond do
-											len==0 ->#IO.puts "No tengo nada libre"
-												bloqueados = bloqueados ++ [pid_hilo_master]
-											len>0 ->#IO.puts "Tengo workers"
-												[head | tail]=freeWorkers
-												send(pid_hilo_master, {:wk_free, head, self()})
-												IO.puts "enviado"
-												freeWorkers = tail
+											len==0 -> ##
+													bloqueados = bloqueados ++ [pid_hilo_master]
+											len>0 ->  ##
+													[head | tail]=freeWorkers
+													send(pid_hilo_master, {:wk_free, head, self()})
+													IO.puts "enviado"
+													freeWorkers = tail
 										end
 										pool(freeWorkers, bloqueados)
 
 			{:ready, dir_wk} -> IO.puts "Un worker esta libre"
 								cond do
 									length(bloqueados) > 0 -> 
-										IO.puts "Tengo procesos bloqueados, despierto en FIFO"
 										[head| tail]= bloqueados
 										send(head, {:wk_free, dir_wk})
 										bloqueados = tail
 									length(bloqueados) == 0 ->
-										IO.puts "No tengo bloqueados, añado wk a la lista"
 										freeWorkers = freeWorkers ++ [dir_wk]
 								end
 								pool(freeWorkers, bloqueados)
 			{:firstLog, dir_wk} -> IO.puts "Worker machine is up, log 4 cores..."
-						freeWorkers = freeWorkers ++ [dir_wk] ++ [dir_wk] ++ [dir_wk] ++ [dir_wk]
-						len = length(freeWorkers)
-						IO.puts len
-						pool(freeWorkers, bloqueados)
+								freeWorkers = freeWorkers ++ [dir_wk] ++ [dir_wk] ++ [dir_wk] ++ [dir_wk]
+								len = length(freeWorkers)
+								pool(freeWorkers, bloqueados)
 		end
 	end
 	def start(dir_pool) do
