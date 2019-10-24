@@ -1,11 +1,11 @@
 escenario = :tres
-#dir_server = :"server@155.210.154.198"
+dir_server = :"server@155.210.154.199"
 #dir_server = :"server@10.1.29.86"
-dir_server = :"server@127.0.0.1"
+#dir_server = :"server@127.0.0.1"
 num_workers = 4
-#dir_pool = :"workers@10.1.55.98"
-dir_pool = :"pool@10.1.29.86"
-dir_pool = :"pool@127.0.0.1"
+dir_pool = :"pool@155.210.154.197"
+#dir_pool = :"pool@10.1.29.86"
+#dir_pool = :"pool@127.0.0.1"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -47,11 +47,14 @@ defmodule Server do
 		receive do
 			{:wk_free, dir_worker, pid_pool} -> Node.spawn(dir_worker, Workers, :workForMe, [pid_client, pid_pool, op, listaValores])
 		end
+
 	end
 
 	def master(dir_pool) do
 		receive do
-			{pid_client, op, listaValores, n} -> spawn(Server, :peticionPool, [pid_client, dir_pool, listaValores, op])
+			{pid_client, op, listaValores, n, :para_m} -> #spawn(Server, :peticionPool, [pid_client, dir_pool, listaValores, op])
+							IO.puts("Recibo mensaje")							
+							peticionPool(pid_client, dir_pool, listaValores, op)
 		end
 		master(dir_pool)
 	end
