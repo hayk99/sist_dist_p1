@@ -1,9 +1,11 @@
 escenario = :tres
 #dir_server = :"server@155.210.154.198"
-dir_server = :"server@10.1.50.138"
+#dir_server = :"server@10.1.29.86"
+dir_server = :"server@127.0.0.1"
 num_workers = 4
 #dir_pool = :"workers@10.1.55.98"
-dir_pool = :"pool@10.1.50.138"
+dir_pool = :"pool@10.1.29.86"
+dir_pool = :"pool@127.0.0.1"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
