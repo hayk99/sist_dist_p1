@@ -10,8 +10,10 @@
  #				M'odulo de operaciones para el cliente (generador de carga de trabajo)
 
 escenario = :tres
-dir_server = :"server@155.210.154.198"
-dir_client = :"client@155.210.154.199"
+#dir_server = :"server@155.210.154.198"
+dir_server = :"server@127.0.0.1"
+#dir_client = :"client@155.210.154.199"
+dir_client = :"client@127.0.0.1"
 
 defmodule Cliente do
 
@@ -50,12 +52,10 @@ defmodule Cliente do
 	
 	def clienteReceive(inst1) do
 		receive do
-			{:fin, time, listaFib} ->  inst2 = Time.utc_now()
-									IO.inspect(time, label: "El tiempo de ejecucion: ")
-                                	IO.inspect(Time.diff(inst2, inst1, :milliseconds), label: "El tiempo total: ")
-                                	IO.inspect(listaFib, label: "Toma lista crack \n\n")
-                                	#if ()
-
+			{:resul, time_ex, result} ->  inst2 = Time.utc_now()
+										IO.inspect(time_ex, label: "El tiempo de ejecucion: ")
+                                		IO.inspect(Time.diff(inst2, time_ex, :milliseconds), label: "El tiempo total: ")
+                                		IO.inspect(result, label: "Toma lista crack \n\n")
 		end
 	end
 

@@ -1,5 +1,7 @@
-dir_worker=:"workers@10.1.55.98"
-dir_pool=:"pool@155.210.154.198"
+#dir_worker=:"workers@10.1.55.98"
+dir_worker=:"workers@127.0.0.1"
+#dir_pool=:"pool@155.210.154.198"
+dir_pool=:"pool@127.0.0.1"
 defmodule Fib do
 	def fibonacci(0), do: 0
 	def fibonacci(1), do: 1
@@ -26,33 +28,30 @@ defmodule Fib do
 end	
 
 defmodule Workers do
-	def workForMe(pid_master,op, listaValores) do
+	def workForMe(pid_client, pid_pool,op, listaValores, inst1, resultado) do
 		IO.puts "comienzo calculo..."
 		cond do 
-			op == "fibonacci" ->
-				inst1 = Time.utc_now()
-				resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
-			op == "fibonacci_tr" ->
-				inst1 = Time.utc_now()
-				resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
+			op=="fibonacci" -> inst1 = Time.utc_now()
+								resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
+			op=="fibonacci_tr" -> inst1 = Time.utc_now()
+								resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
 		end
 		inst2 = Time.utc_now()
-		IO.inspect(pid_master, label: "Sending time to: ")
+		IO.inspect(pid_client, label: "Sending time to: ")
 		tiempo = Time.diff(inst2,inst1)
-		send(pid_master, {:resul, tiempo, resultado})
-		send(dir_pool, {:ready, self()})
+		send(pid_client, {:resul, tiempo, resultado})
+		send(pid_pool, {:ready, self()})
 	end
-#	def calculoFib(pid_master, pid_pool, op, listaValores) do
+#	def calculoFib(pid_client, pid_pool, op, listaValores) do
 
-	def start(dir, dir_pool)do
-		Node.start dir
+	def start(dir_worker, dir_pool, inst1, resultado)do
+		Node.start dir_worker
 		Process.register(self(),:workers)
 		Node.set_cookie(:cookie)
 		Node.connect(dir_pool)
-		Node.connect(dir_master)
-		send(dir_pool, {:firstLog, dir_worker})
+		send({:pool,dir_pool}, {:firstLog, dir_worker})
 		IO.puts "Workers is up"
 	end
 end
 
-Workers.start(dir_worker, dir_pool)
+Workers.start(dir_worker, dir_pool,0,0)

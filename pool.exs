@@ -1,18 +1,19 @@
 
-dir_pool=:"pool@155.210.154.198"
+#dir_pool=:"pool@155.210.154.198"
+dir_pool=:"pool@127.0.0.1"
 defmodule Pool do
 	def pool(freeWorkers, bloqueados) do
 		receive do
-			{pid_hilo, :req_wk}  -> IO.puts "Master needs a worker"
+			{pid_hilo_master, :req_wk}  -> IO.puts "Master needs a worker"
 								len = length(freeWorkers)
 								cond do
 									len == 0 -> 
 										IO.puts "No tengo nada libre"
-										bloqueados ++ [pid_hilo]
+										bloqueados ++ [pid_hilo_master]
 									len > 0 ->
 										IO.puts "Tengo workers"
 										[head | tail]=freeWorkers
-										send(pid_hilo, {:wk_free, head})
+										send(pid_hilo_master, {:wk_free, head, self()})
 										freeWorkers = tail
 								end
 

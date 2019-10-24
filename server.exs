@@ -1,7 +1,9 @@
 escenario = :tres
-dir_server = :"server@155.210.154.198"
+#dir_server = :"server@155.210.154.198"
+dir_server = :"server@127.0.0.1"
 num_workers = 4
-dir_pool = :"workers@10.1.55.98"
+#dir_pool = :"workers@10.1.55.98"
+dir_pool = :"workers@127.0.0.1"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -41,18 +43,15 @@ defmodule Server do
 
 	def peticionPool(pid_client, dir_pool, listaValores, op) do
 
-		send(dir_pool, {self() , :req_wk})
+		send({:pool,dir_pool}, {self() , :req_wk})
 		receive do
-			{:wk_free, pid_worker} -> Node.spawn(pid_worker, Workers, :workForMe, {self(), op, listaValores})
-			receive do
-				{:resul, time_ex, result} -> send(pid_client, {:fin, time_ex, result})
-			end
+			{:wk_free, pid_worker, pid_pool} -> Node.spawn({:workers, pid_worker}, Workers, :workForMe, {pid_client, pid_pool, op, listaValores})
 		end
 	end
 
 	def master(dir_pool) do
 		receive do
-			{pid, op, listaValores, n} -> spawn(Server, :peticionPool, [pid, dir_pool, listaValores, op])
+			{pid_client, op, listaValores, n} -> spawn(Server, :peticionPool, [pid_client, dir_pool, listaValores, op])
 		end
 		master(dir_pool)
 	end
@@ -77,6 +76,7 @@ defmodule Server do
 		Node.start dirs
 		Process.register(self(), :server)
 		Node.set_cookie(:cookie)
+		Node.connect(dir_pool)
 		IO.puts("Master is up")
 		Server.master(dir_pool)
 	end
