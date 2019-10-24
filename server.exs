@@ -1,9 +1,9 @@
 escenario = :tres
 #dir_server = :"server@155.210.154.198"
-dir_server = :"server@127.0.0.1"
+dir_server = :"server@10.1.50.138"
 num_workers = 4
 #dir_pool = :"workers@10.1.55.98"
-dir_pool = :"workers@127.0.0.1"
+dir_pool = :"workers@10.1.50.138"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -43,7 +43,7 @@ defmodule Server do
 
 	def peticionPool(pid_client, dir_pool, listaValores, op) do
 
-		send({:pool,dir_pool}, {self() , :req_wk})
+		send({:pool,dir_pool}t, {self() , :req_wk})
 		receive do
 			{:wk_free, pid_worker, pid_pool} -> Node.spawn({:workers, pid_worker}, Workers, :workForMe, {pid_client, pid_pool, op, listaValores})
 		end

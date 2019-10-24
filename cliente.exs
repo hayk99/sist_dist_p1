@@ -11,9 +11,9 @@
 
 escenario = :tres
 #dir_server = :"server@155.210.154.198"
-dir_server = :"server@127.0.0.1"
+dir_server = :"server@10.1.50.138"
 #dir_client = :"client@155.210.154.199"
-dir_client = :"client@127.0.0.1"
+dir_client = :"client@10.1.50.138"
 
 defmodule Cliente do
 

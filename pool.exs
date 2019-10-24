@@ -1,6 +1,6 @@
 
 #dir_pool=:"pool@155.210.154.198"
-dir_pool=:"pool@127.0.0.1"
+dir_pool=:"pool@10.1.50.138"
 defmodule Pool do
 	def pool(freeWorkers, bloqueados) do
 		receive do

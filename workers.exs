@@ -1,7 +1,7 @@
 #dir_worker=:"workers@10.1.55.98"
-dir_worker=:"workers@127.0.0.1"
+dir_worker=:"workers@10.1.55.98"
 #dir_pool=:"pool@155.210.154.198"
-dir_pool=:"pool@127.0.0.1"
+dir_pool=:"pool@10.1.50.138"
 defmodule Fib do
 	def fibonacci(0), do: 0
 	def fibonacci(1), do: 1
