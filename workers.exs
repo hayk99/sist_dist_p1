@@ -31,9 +31,9 @@ defmodule Workers do
 	def workForMe(pid_client, pid_pool,op, listaValores, inst1, resultado) do
 		IO.puts "comienzo calculo..."
 		cond do 
-			op=="fibonacci" -> inst1 = Time.utc_now()
+			op==:fib -> inst1 = Time.utc_now()
 								resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
-			op=="fibonacci_tr" -> inst1 = Time.utc_now()
+			op==:fib_tr -> inst1 = Time.utc_now()
 								resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
 		end
 		inst2 = Time.utc_now()

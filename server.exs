@@ -3,7 +3,7 @@ escenario = :tres
 dir_server = :"server@10.1.50.138"
 num_workers = 4
 #dir_pool = :"workers@10.1.55.98"
-dir_pool = :"workers@10.1.50.138"
+dir_pool = :"pool@10.1.50.138"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -42,10 +42,11 @@ defmodule Server do
 	end
 
 	def peticionPool(pid_client, dir_pool, listaValores, op) do
-
-		send({:pool,dir_pool}t, {self() , :req_wk})
+		send({:pool,dir_pool}, {self() , :req__wk})
 		receive do
-			{:wk_free, pid_worker, pid_pool} -> Node.spawn({:workers, pid_worker}, Workers, :workForMe, {pid_client, pid_pool, op, listaValores})
+			{:wk_free, dir_worker, pid_pool} -> IO.puts "received wk"
+												Node.spawn(dir_worker, Workers, :workForMe, [pid_client, pid_pool, op, listaValores, 0, 0])
+												IO.puts "sent"
 		end
 	end
 
@@ -61,7 +62,7 @@ defmodule Server do
 			{pid, :fib, listaValores, n} -> IO.inspect(pid, label: "Request from client with pid: ")
 											spawn(Server, :calculoFib, [pid, listaValores])
 		end
-		server()
+		server() 
 	end
 
 	def lunchServer(dirs) do

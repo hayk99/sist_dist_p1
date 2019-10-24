@@ -21,12 +21,14 @@ defmodule Cliente do
 	def launch(server_pid, op, 1) do
 		pid = spawn(Cliente, :clienteReceive, [Time.utc_now()])
 		send(server_pid, {pid, op, 1..36, 1})
+		IO.puts "Sent"
 	end
 
 	def launch(server_pid, op, n) when n != 1 do
 		pid = spawn(Cliente, :clienteReceive, [Time.utc_now()])
 		send(server_pid, {pid, op, 1..36, n})
 		launch(server_pid, op, n - 1)
+		IO.puts "Sent"
 	end 
 	
 	def genera_workload(server_pid, escenario, time) do
