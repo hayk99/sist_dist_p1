@@ -39,7 +39,7 @@ defmodule Server do
 		send(pid, {:fin, tiempo, resultado})
 	end
 
-	def peticionPool(pid_client, dir_pool, listaValores) do
+	def peticionPool(pid_client, dir_pool, listaValores, op) do
 
 		send(dir_pool, {self() , :req_wk})
 		receive do
@@ -52,7 +52,7 @@ defmodule Server do
 
 	def master(dir_pool) do
 		receive do
-			{pid, :fib, listaValores, n} -> spawn(Server, :peticionPool, [pid, dir_pool, listaValores])
+			{pid, op, listaValores, n} -> spawn(Server, :peticionPool, [pid, dir_pool, listaValores, op])
 		end
 		master(dir_pool)
 	end
