@@ -1,11 +1,10 @@
-freeWorkers = []
-bloqueds = []
-dir_pool=:"pool@"
-defmodule pool do
-	def Pool() do
+
+dir_pool=:"pool@155.210.154.198"
+defmodule Pool do
+	def pool(freeWorkers, bloqueados) do
 		receive do
 			{pid_hilo, :req_wk}  -> IO.puts "Master needs a worker"
-								int len = length(freeWorkers)
+								len = length(freeWorkers)
 								cond do
 									len == 0 -> 
 										IO.puts "No tengo nada libre"
@@ -21,24 +20,24 @@ defmodule pool do
 								cond do
 									length(bloqueados) > 0 -> 
 										IO.puts "Tengo procesos bloqueados, despierto en FIFO"
-										[head_b| tail_b]=desbloqueados
-										send(head, {:wk_free, head})
-										bloqueados = tail_b
+										[head| tail]= bloqueados
+										send(head, {:wk_free, dir_wk})
+										bloqueados = tail
 									length(bloqueados) == 0 ->
 										IO.puts "No tengo bloqueados, añado wk a la lista"
 										freeWorkers ++ [dir_wk]
 								end
 			{:firstLog, dir_wk} -> IO.puts "Worker machine is up, log 4 cores..."
-									freeWorkers ++ [dir_wk] ++ [dir_wk] ++ [dir_wk] ++ [dir_wk]
+						freeWorkers ++ [dir_wk] ++ [dir_wk] ++ [dir_wk] ++ [dir_wk]
 		end
-		pool()
+		pool(freeWorkers, bloqueados)
 	end
 	def start(dir_pool) do
 		Node.start dir_pool
 		Process.register(self(),:pool)
 		Node.set_cookie(:cookie)
 		IO.puts "Pool is up"
-		Pool.pool()
+		Pool.pool([], [])
 	end
 end
 Pool.start(dir_pool)

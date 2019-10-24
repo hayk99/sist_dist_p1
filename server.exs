@@ -1,5 +1,5 @@
 escenario = :tres
-dir_server = :"server@10.1.58.239"
+dir_server = :"server@155.210.154.198"
 num_workers = 4
 dir_pool = :"workers@10.1.55.98"
 
@@ -43,7 +43,7 @@ defmodule Server do
 
 		send(dir_pool, {self() , :req_wk})
 		receive do
-			{:wk_free, pid_worker} -> Node.spawn(pid_worker, Workers, :workForMe, {slef(), op, listaValores})
+			{:wk_free, pid_worker} -> Node.spawn(pid_worker, Workers, :workForMe, {self(), op, listaValores})
 			receive do
 				{:resul, time_ex, result} -> send(pid_client, {:fin, time_ex, result})
 			end
@@ -69,7 +69,7 @@ defmodule Server do
 		Node.start dirs
 		Process.register(self(), :server)
 		Node.set_cookie(:cookie)
-		IO.puts("Server is up")
+		IO.puts("Server is up: ")
 		Server.server()
 	end
 

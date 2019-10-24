@@ -1,5 +1,5 @@
 dir_worker=:"workers@10.1.55.98"
-dir_pool=:"pool@10.1.55.98"
+dir_pool=:"pool@155.210.154.198"
 defmodule Fib do
 	def fibonacci(0), do: 0
 	def fibonacci(1), do: 1
@@ -37,10 +37,10 @@ defmodule Workers do
 				resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
 		end
 		inst2 = Time.utc_now()
-		IO.inspect(pid, label: "Sending time to: ")
+		IO.inspect(pid_master, label: "Sending time to: ")
 		tiempo = Time.diff(inst2,inst1)
 		send(pid_master, {:resul, tiempo, resultado})
-		send(pid_pool, {:ready, self()})
+		send(dir_pool, {:ready, self()})
 	end
 #	def calculoFib(pid_master, pid_pool, op, listaValores) do
 
@@ -50,9 +50,9 @@ defmodule Workers do
 		Node.set_cookie(:cookie)
 		Node.connect(dir_pool)
 		Node.connect(dir_master)
-		send(dir_pool, {:firstLog, dir_workerr})
+		send(dir_pool, {:firstLog, dir_worker})
 		IO.puts "Workers is up"
 	end
 end
 
-Workers.start(dir_worker, dir_pool, dir_master)
+Workers.start(dir_worker, dir_pool)

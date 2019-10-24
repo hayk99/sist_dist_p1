@@ -9,9 +9,9 @@
  #			 	Las opciones de invocaci'on son: Fib.fibonacci(n), Fib.fibonacci_rt(n), Fib.of(n)
  #				M'odulo de operaciones para el cliente (generador de carga de trabajo)
 
-escenario = :dos
-dir_server = :"server@10.1.58.239"
-dir_client = :"client@10.1.55.98"
+escenario = :tres
+dir_server = :"server@155.210.154.198"
+dir_client = :"client@155.210.154.199"
 
 defmodule Cliente do
 
@@ -67,7 +67,7 @@ defmodule Cliente do
 			:uno -> genera_workload(server_pid, 1)
 			:dos -> genera_workload(server_pid, 2) 
 			:tres -> genera_workload(server_pid, 3, 1)
-	end
+		end
 	end
 
  	def lunchClient(server_name, escenario, dir_server, dir_client) do
