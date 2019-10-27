@@ -1,5 +1,6 @@
-escenario = :tres
+escenario = :dos
 dir_server = :"server@127.0.0.1"
+num_workers = 4
 dir_pool = :"pool@127.0.0.1"
 
 defmodule Fib do
@@ -33,7 +34,7 @@ defmodule Server do
 		inst1 = Time.utc_now()
 		resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
 		inst2 = Time.utc_now()
-		tiempo = Time.diff(inst2,inst1, :milliseconds)
+		tiempo = Time.diff(inst2,inst1, :millisecond)
 		send(pid, {:resul, tiempo, resultado})
 	end
 
@@ -47,9 +48,9 @@ defmodule Server do
 
 	def master(dir_pool) do
 		receive do
-			{pid_client, op, listaValores, _n} -> 	spawn(Server, :peticionPool, [pid_client, dir_pool, listaValores, op])
-															IO.puts("Recibo mensaje")							
-															#peticionPool(pid_client, dir_pool, listaValores, op)
+			{pid_client, op, listaValores, _n, :para_m} -> #spawn(Server, :peticionPool, [pid_client, dir_pool, listaValores, op])
+							IO.puts("Recibo mensaje")							
+							peticionPool(pid_client, dir_pool, listaValores, op)
 		end
 		master(dir_pool)
 	end
