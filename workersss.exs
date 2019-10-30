@@ -1,5 +1,5 @@
-dir_worker=:"workers@155.210.154.210"
-dir_pool=:"pool@155.210.154.207"
+dir_worker=:"workers2@155.210.154.204"
+dir_pool=:"pool@155.210.154.202"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -27,28 +27,24 @@ defmodule Fib do
 end	
 
 defmodule Workers do
-	def workForMe(pid_client, pid_pool,op, listaValores) do
-		dir_worker=:"workers@155.210.154.210"
-		inst1 = Time.utc_now()
+	def workForMe(pid_client, dir_pool, op, listaValores) do
+		dir_worker=:"workers2@155.210.154.204"
 		resultado=0
+		inst1 = Time.utc_now()
 		if op==:fib do	
 			IO.puts "hago fib"
 			resultado = Enum.map(listaValores, fn x -> Fib.fibonacci(x) end)
 			inst2 = Time.utc_now()
 			send(pid_client, {:resul, Time.diff(inst2,inst1, :microseconds), resultado})
-			send(pid_pool, {:ready, dir_worker})
+			send(dir_pool, {:ready, dir_worker})
 		end
 		if op==:fib_tr do
 			IO.puts "hago fib_tr"	
 			resultado = Enum.map(listaValores, fn x -> Fib.fibonacci_tr(x) end)
 			inst2 = Time.utc_now()
 			send(pid_client, {:resul, Time.diff(inst2,inst1, :microseconds), resultado})
-			send(pid_pool, {:ready, dir_worker})
+			send(dir_pool, {:ready, dir_worker})
 		end
-		#inst2 = Time.utc_now()
-		#send(pid_client, {:resul, Time.diff(inst2,inst1, :milliseconds), resultado})
-		#send(pid_pool, {:ready, self()})
-		#send(pid_pool, {:ready, dir_worker})
 	end
 
 

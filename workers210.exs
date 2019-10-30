@@ -1,5 +1,5 @@
-dir_worker=:"workers@155.210.161.254"
-dir_pool=:"pool@155.210.152.177"
+dir_worker=:"workers@155.210.154.210"
+dir_pool=:"pool@155.210.154.209"
 
 defmodule Fib do
 	def fibonacci(0), do: 0
@@ -28,7 +28,7 @@ end
 
 defmodule Workers do
 	def workForMe(pid_client, dir_pool, op, listaValores) do
-		dir_worker=:"workers@155.210.161.254"
+		dir_worker=:"workers@155.210.154.210"
 		resultado=0
 		inst1 = Time.utc_now()
 		if op==:fib do	

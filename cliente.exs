@@ -10,20 +10,20 @@
  #				M'odulo de operaciones para el cliente (generador de carga de trabajo)
 
 escenario = :tres
-dir_server = :"server@127.0.0.1"
-dir_client = :"client@127.0.0.1"
+dir_server = :"server@155.210.154.209"
+dir_client = :"client@155.210.154.208"
 
 defmodule Cliente do
 
 
 	def launch(server_pid, op, 1) do
 		pid=spawn(Cliente, :clienteReceive, [Time.utc_now()])
-		send(server_pid, {pid, op, 1..36, 1})
+		send(server_pid, {:client_rq, pid, op, 1..36, 1})
 	end
 
 	def launch(server_pid, op, n) when n != 1 do
 		pid=spawn(Cliente, :clienteReceive, [Time.utc_now()])
-		send(server_pid, {pid, op, 1..36, n})
+		send(server_pid, {:client_rq, pid, op, 1..36, n})
 		launch(server_pid, op, n - 1)
 	end 
 	
@@ -52,10 +52,13 @@ defmodule Cliente do
 		#send(server_pid, {self(), op, rango, n, :para_m})		
 		receive do
 			{:resul, time_ex, result} ->	inst2 = Time.utc_now()
-											IO.inspect(time_ex, label: "El tiempo de ejecucion: ")
-                                			IO.inspect(Time.diff(inst2, inst1, :microseconds), label: "El tiempo total: ")
-											IO.puts "--------------------"
-                                			IO.inspect(result, label: "Toma lista crack \n\n")
+											#IO.inspect(time_ex, label: "El tiempo de ejecucion: ")
+							#IO.inspect(a)
+							IO.inspect("#{time_ex} #{Time.diff(inst2, inst1, :microseconds)}")
+                                			#IO.inspect(Time.diff(inst2, inst1, :microseconds), label: "El tiempo total: ")
+							if Time.diff(inst2, inst1, :microseconds) > 1.5*time_ex, do: IO.puts "QoS incumplido"
+							#				IO.puts "--------------------"
+                                			#IO.inspect(result, label: "Toma lista crack \n\n")
 		end
 	end
 
